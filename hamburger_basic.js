@@ -1,5 +1,5 @@
 /**
- * hamburger.js
+ * hamburger_basic.js
  *
  * Mobile Menu Hamburger
  * =====================
@@ -7,10 +7,7 @@
  */
 
 $(document).ready(function() {
-    // add Fastclick
-    $(function() {
-    FastClick.attach(document.body);
-    });
+
     //Open the menu
     $("#hamburger").click(function() {
 
