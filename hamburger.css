@@ -8,9 +8,8 @@ body {
     font-family: Arial;
     font-size: 18px;
 }
-#content{
-    text-align: center;
-}
+
+
 /*
 Header is relative so z-index: 1 guarantees always displayed on top
 */
@@ -30,6 +29,7 @@ using background color is important to cover the menu
 position absolute is set to cover the whole viewport
 */
 #content {
+    text-align: center;
     background-color: #FFFFFF;
     padding: 52px 10px 10px 10px;
     position: relative;
@@ -102,6 +102,7 @@ nav {
     background: linear-gradient(to bottom,  #3e3c3d 0%,#2d2c2d 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3c3d', endColorstr='#2d2c2d',GradientType=0 );
 }
+
 
 /*
 Style the navigation menu

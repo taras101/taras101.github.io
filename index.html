@@ -2,19 +2,21 @@
 <html>
 <head>
     <title>Mobile Menu Hamburger</title>
+    <!-- Sets device size for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <!--Using jQuery and jQuery UI for display effects-->
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <!-- Fastclick for speeding up mobile -->
 
+    <!-- Fastclick for speeding up mobile -->
     <script src= "http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.js"></script>
 
     <!--Using the hamburger menu display code-->
     <script src="hamburger.js"></script>
 
-    <!--Using Media Queries, if the viewport is smaller than 700px use another stylesheet-->
     <link rel="stylesheet" type="text/css" media="all" href="hamburger.css" />
+    <!--Using Media Queries, if the viewport is smaller than 768px use another stylesheet-->
+    <!-- <link rel="stylesheet" type="text/css" media="all" href="hamburgerTop.css" /> -->
 </head>
 
 <body>
@@ -50,6 +52,7 @@
                 <li><a href="#">menuitem 9</a></li>
             </ul>
         </nav>
+
 
         <!--The Layer that will be layed over the content
         so that the content is unclickable while menu is shown-->
