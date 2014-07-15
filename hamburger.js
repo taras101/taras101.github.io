@@ -1,9 +1,5 @@
 /**
  * hamburger.js
- *
- * Mobile Menu Hamburger
- * =====================
- * A hamburger menu for mobile websites
  */
 
 $(document).ready(function() {
@@ -31,7 +27,7 @@ $(document).ready(function() {
         $('#contentLayer').css('display', 'block');
 
         //set margin for the whole container with a JQuery UI animation
-        $("#container").animate({"marginLeft": ["70%", 'easeOutExpo']}, {
+        $("#container").animate({"marginLeft": ["70%", 'easeInOutBack']}, {
             duration: 900
         });
 
@@ -48,15 +44,8 @@ $(document).ready(function() {
         document.getElementById('contentLayer').style.display = 'block';
 
         // set margin for the whole container
-
         var contain = document.getElementById('container');
         contain.style.marginLeft= '70%';
-
-         // animate the object
-         // $("#container").animate({"marginLeft": ["70%", 'easeOutExpo']}, {
-         //     duration: 900
-         // });
-
     });
 
 
@@ -64,7 +53,7 @@ $(document).ready(function() {
     $("#contentLayer").click(function() {
 
         //set margin for the whole container back to original state with a JQuery UI animation
-        $("#container").animate({"marginLeft": ["0", 'easeOutExpo']}, {
+        $("#container").animate({"marginLeft": ["0", 'easeInOutBack']}, {
             duration: 900,
             complete: function() {
                   $('#content').css('width', 'auto');

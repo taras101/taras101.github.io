@@ -1,6 +1,4 @@
-/*
-Setup a basic body
-*/
+
 body {
     margin: 0;
     padding: 0;
@@ -40,7 +38,7 @@ position absolute is set to cover the whole viewport
 }
 
 /*
-the hamburger button with a little gradient effekt
+the hamburger buttons
 */
 #hamburger ,#hamburger2{
     border: 1px solid #374C77;
@@ -103,7 +101,6 @@ nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3c3d', endColorstr='#2d2c2d',GradientType=0 );
 }
 
-
 /*
 Style the navigation menu
 */
@@ -128,8 +125,7 @@ nav li a {
 }
 
 /*
-The Layer that will be layed over the content
-so that the content is unclickable while menu is shown
+The cover layer so that the content is unclickable while menu is shown
 */
 #contentLayer {
     display: none;
