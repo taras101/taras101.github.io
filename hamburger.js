@@ -9,8 +9,20 @@ $(document).ready(function() {
     });
     //slide menu open
     window.addEventListener('load', function(){ // on page load
-    document.body.addEventListener('touchmove', function(e){
-        alert(e.changedTouches[0].pageX) // alert pageX coordinate of touch point
+    document.body.addEventListener('touchmove', function(){
+    var contentWidth = $('#content').width();
+
+        //set the content with the width that it has originally
+        $('#content').css('width', contentWidth);
+
+        //display a layer to disable clicking and scrolling on the content while menu is shown
+        $('#contentLayer').css('display', 'block');
+
+        //set margin for the whole container with a JQuery UI animation
+        $("#container").animate({"marginLeft": ["70%", 'easeOutBack']}, {
+            duration: 900
+        });
+
         }, false)
     }, false);
 
@@ -27,7 +39,7 @@ $(document).ready(function() {
         $('#contentLayer').css('display', 'block');
 
         //set margin for the whole container with a JQuery UI animation
-        $("#container").animate({"marginLeft": ["70%", 'easeInOutBack']}, {
+        $("#container").animate({"marginLeft": ["70%", 'easeOutBack']}, {
             duration: 900
         });
 
